@@ -4,7 +4,7 @@ input, button, select, textarea {
 
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF;
     color: #212121;
     margin: 0;
     overflow-x: hidden;
@@ -22,7 +22,7 @@ body {
 
 .header {
     width: 100%;
-    background-color: transparent;
+    background-color: transparent !important;
     padding: 24px 0;
 }
 
@@ -90,11 +90,15 @@ body {
     background-color: #FFFFFF;
     color: #212121;
     padding: 12px 28px;
-    border-radius: 24px;
+    border-radius: 16px;
+    position: relative;
+    z-index: 10;
     font-size: 15px;
     font-weight: 600;
+
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+
 }
 
 .header-actions .btn-primary:hover {
@@ -163,7 +167,7 @@ body {
     background-color: #FF474D;
     color: #FFFFFF;
     padding: 18px 38px;
-    border-radius: 32px;
+    border-radius: 16px;
     font-size: 16px;
     font-weight: 600;
     box-shadow: 0 8px 24px rgba(255, 71, 77, 0.3);
@@ -187,39 +191,54 @@ body {
     width: 580px;
     height: 550px;
     flex-shrink: 0;
+    margin-right: -80px;
+    z-index: 2;
 }
 
-.images::before {
-    content: '';
+.hero-bg-shape {
     position: absolute;
     width: 1031.82px;
     height: 1049.93px;
     top: -273.19px;
-    left: 340.05px;
-    background-color: rgba(251, 36, 43, 0.6);
+    right: -360px; 
+    background-color: #FB242B;
+    opacity: 0.6;
     border-radius: 136.46px;
     transform: rotate(45deg);
     z-index: 1;
     pointer-events: none;
 }
 
+.hero-bg-shape-top {
+    position: absolute;
+    width: 964.17px;
+    height: 964.17px;
+    top: -226.41px;
+    right: -314px; 
+    background-color: #FB242B;
+    border-radius: 125.32px;
+    transform: rotate(45deg);
+    z-index: 2;
+    pointer-events: none;
+}
+
 .mockup-desktop {
     position: absolute !important;
-    top: 50px !important;
-    right: -30px !important;
-    width: 520px !important;
+    top: 60px !important;
+    right: -40px !important;
+    width: 580px !important;
     height: auto !important;
-    z-index: 2;
+    z-index: 3;
     filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.08));
 }
 
 .mockup-phone {
     position: absolute !important;
-    bottom: 30px !important;
-    left: -40px !important;
-    width: 215px !important;
+    bottom: 40px !important;
+    left: -20px !important;
+    width: 230px !important;
     height: auto !important;
-    z-index: 3;
+    z-index: 4;
     filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.12));
 }
 
