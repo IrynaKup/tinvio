@@ -27,7 +27,6 @@ body {
     font-size: 15px;
     font-weight: 600;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
-    transition: all 0.2s ease;
 }
 
 .btn-primary:hover {
@@ -105,7 +104,6 @@ body {
 
 .lang-button svg {
     display: block;
-    transition: transform 0.2s ease;
 }
 
 .lang-dropdown {
@@ -155,11 +153,9 @@ body {
         flex-wrap: wrap;
         gap: 16px;
     }
-
     .nav-list {
         display: none;
     }
-    
     .btn-primary {
         padding: 10px 20px;
         font-size: 14px;
