@@ -153,11 +153,4 @@ body {
         flex-wrap: wrap;
         gap: 16px;
     }
-    .nav-list {
-        display: none;
-    }
-    .btn-primary {
-        padding: 10px 20px;
-        font-size: 14px;
-    }
 }
