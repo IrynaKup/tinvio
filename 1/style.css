@@ -228,7 +228,7 @@ body {
     height: 900px;
     top: -190px;
     right: -250px;
-    background-color: #FB242B;
+    background-color: #FF474D;
     opacity: 0.08;
     border-radius: 140px;
     transform: rotate(45deg);
@@ -241,7 +241,7 @@ body {
     height: 820px;
     top: -150px;
     right: -180px;
-    background-color: #FB242B;
+    background-color: #FF474D;
     border-radius: 130px;
     transform: rotate(45deg);
     z-index: 1;
