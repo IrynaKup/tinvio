@@ -24,6 +24,8 @@ body {
     width: 100%;
     background-color: transparent !important;
     padding: 24px 0;
+    position: relative;
+    z-index: 10;
 }
 
 .header-container {
@@ -92,13 +94,11 @@ body {
     padding: 12px 28px;
     border-radius: 16px;
     position: relative;
-    z-index: 10;
+    z-index: 20;
     font-size: 15px;
     font-weight: 600;
-
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-
 }
 
 .header-actions .btn-primary:hover {
@@ -110,6 +110,8 @@ body {
     width: 100%;
     position: relative;
     overflow: hidden;
+    margin-top: -95px;
+    padding-top: 95px;
 }
 
 .main-section .container {
@@ -119,6 +121,7 @@ body {
     min-height: calc(100vh - 88px);
     position: relative;
     gap: 40px;
+    z-index: 3;
 }
 
 .main-content {
@@ -191,61 +194,100 @@ body {
     width: 580px;
     height: 550px;
     flex-shrink: 0;
-    margin-right: -80px;
+    margin-right: -40px;
+    z-index: 5;
+}
+
+.mockup-desktop {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 580px;
+    z-index: 1;
+}
+
+.mockup-phone {
+    position: absolute;
+    bottom: -10px;
+    left: -20px;
+    width: 215px;
     z-index: 2;
+    filter: drop-shadow(0px 25px 50px rgba(0, 0, 0, 0.15));
+}
+
+.mockup-desktop svg,
+.mockup-phone svg {
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .hero-bg-shape {
     position: absolute;
-    width: 1031.82px;
-    height: 1049.93px;
-    top: -273.19px;
-    right: -360px; 
+    width: 900px;
+    height: 900px;
+    top: -190px;
+    right: -250px;
     background-color: #FB242B;
-    opacity: 0.6;
-    border-radius: 136.46px;
+    opacity: 0.08;
+    border-radius: 140px;
     transform: rotate(45deg);
-    z-index: 1;
-    pointer-events: none;
+    z-index: -1;
 }
 
 .hero-bg-shape-top {
     position: absolute;
-    width: 964.17px;
-    height: 964.17px;
-    top: -226.41px;
-    right: -314px; 
+    width: 820px;
+    height: 820px;
+    top: -150px;
+    right: -180px;
     background-color: #FB242B;
-    border-radius: 125.32px;
+    border-radius: 130px;
     transform: rotate(45deg);
-    z-index: 2;
-    pointer-events: none;
+    z-index: 1;
 }
 
-.mockup-desktop {
-    position: absolute !important;
-    top: 60px !important;
-    right: -40px !important;
-    width: 580px !important;
-    height: auto !important;
-    z-index: 3;
-    filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.08));
-}
+@media (max-width: 1024px) {
+    .main-section .container {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 
-.mockup-phone {
-    position: absolute !important;
-    bottom: 40px !important;
-    left: -20px !important;
-    width: 230px !important;
-    height: auto !important;
-    z-index: 4;
-    filter: drop-shadow(0px 24px 48px rgba(0, 0, 0, 0.12));
-}
+    .main-content {
+        max-width: 500px;
+        margin-bottom: 40px;
+    }
 
-.mockup-desktop,
-.mockup-phone {
-    display: block;
-    overflow: visible;
+    .hero-actions {
+        margin: 0 auto;
+    }
+
+    .images {
+        margin-right: 0;
+        width: 100%;
+        max-width: 500px;
+        height: 480px;
+    }
+
+    .mockup-desktop {
+        width: 100%;
+        top: 0;
+    }
+
+    .mockup-phone {
+        width: 180px;
+        left: 0;
+        bottom: 0;
+    }
+
+    .hero-bg-shape,
+    .hero-bg-shape-top {
+        right: -50%;
+        top: 20%;
+    }
 }
 
 @media (max-width: 992px) {
