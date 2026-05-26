@@ -4,173 +4,67 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    
+</head>
+<body>
 
-            <header class="header">
-        <div class="wrap header-wrap">
-            <a href="#" class="logo"><img src="logo.svg" alt="Logo"></a>
-            <nav class="menu">
-                <a href="#" class="menu-link active">Home</a>
-                <a href="#" class="menu-link">Features</a>
-                <a href="#" class="menu-link">Company</a>
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-wrapper">
+                <a href="#" class="logo">
+                    <img src="logo.svg">
+                </a>
+                <a href="#" class="Name">
+                    <img src="name.svg">
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Features</a></li>
+                    <li><a href="#" class="nav-link">Company</a></li>
+                </ul>
             </nav>
-            <button class="btn">Get Started</button>
+            <div class="header-actions">
+                <div class="lang-select-container">
+                    <select id="langSelect">
+                        <option value="en">EN</option>
+                        <option value="ru">RU</option>
+                    </select>
+                </div>
+                <a href="#" class="btn-signin">Sign In</a>
+            </div>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="wrap hero-wrap">
-            <div class="hero-info">
-                <h1 class="hero-title">Collecting payments <span class="red">is easy</span>, right?</h1>
-                <p class="hero-text">Manage invoices, payment links, and dashboard. Get paid faster, reconcile quicker, grow happier.</p>
-                <button class="btn btn-lg">Get Started Now</button>
-            </div>
-            <div class="hero-screen">
-                <img src="hero-mockup.png" alt="Dashboard" class="hero-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="steps">
-        <div class="wrap steps-wrap">
-            <div class="steps-pic">
-                <img src="steps-flow.png" alt="Flow">
-            </div>
-            <div class="steps-info">
-                <h2 class="title">Check out how it works</h2>
-                <p class="desc">Take a look at how seamlessly Tinvio automates your daily workflows and keeps your ecosystem happy.</p>
-                <button class="btn-border">⚡ Play Video</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="features">
-        <div class="wrap features-wrap">
-            <div class="features-info">
-                <h2 class="title">Smarter supply chain transactions. <span class="red">More buddy!</span></h2>
-                <div class="tags">
-                    <span class="tag active">Chats</span>
-                    <span class="tag">Orders</span>
-                    <span class="tag">Payments</span>
+    <main class="main-section">
+        <div class="container">
+            <div class="main-content">
+                <h1 class="title">Value Proposition</h1>
+                
+                <div class="hero-actions">
+                    <a href="#" class="btn-primary">Start Now</a>
+                    <span class="btn-subtext">30 Days Trial</span>
                 </div>
-                <ul class="list">
-                    <li>Create chats with any business (even if they aren't on Tinvio)</li>
-                    <li>Fully integrated to your order workflows</li>
-                    <li>Real-time delivery status tracking</li>
-                </ul>
-                <button class="btn">More Features</button>
             </div>
-            <div class="features-pic">
-                <div class="rhombus"></div>
-                <img src="features-mockup.png" alt="Mobile UI">
-            </div>
-        </div>
-    </section>
 
-    <section class="media">
-        <div class="wrap">
-            <p class="media-title">Featured On</p>
-            <div class="media-grid">
-                <img src="techcrunch.svg" alt="TechCrunch">
-                <img src="techinasia.svg" alt="TechInAsia">
-                <img src="pynts.svg" alt="Pynts">
-                <img src="venturebeat.svg" alt="VentureBeat">
-            </div>
-        </div>
-    </section>
-
-    <section class="reviews">
-        <div class="wrap">
-            <div class="reviews-box">
-                <h2 class="reviews-title">Why choose Tinvio?</h2>
-                <div class="card">
-                    <div class="card-info">
-                        <p class="card-text">“Tinvio has been a revolutionary partner and helper. The structure allows us to support more of our loyal customer base. It truly makes order processing and delivery more streamlined than ever before.”</p>
-                        <div class="card-author">
-                            <h4>Rajesh Misra</h4>
-                            <p>Director, Global Supply</p>
-                        </div>
-                    </div>
-                    <div class="card-pic">
-                        <img src="testimonial-holder.png" alt="User">
-                    </div>
+            <div class="images">
+                <div class="mockup-desktop">
+                    <img src="desktop.svg" alt="Desktop">
                 </div>
-                <div class="arrows">
-                    <button class="arrow">&larr;</button>
-                    <button class="arrow">&rarr;</button>
+                <div class="mockup-phone">
+                    <img src="phone.svg" alt="Phone">
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="eco">
-        <div class="wrap">
-            <h2 class="eco-title">We'll put a smile on your supply chain</h2>
-            <div class="eco-map">
-                <div class="main-rhombus">
-                    <div class="rhombus-text">
-                        <span class="num">5000+</span>
-                        <span class="sub">happy businesses</span>
-                    </div>
-                </div>
-                <div class="icon i1"><img src="eco-1.svg" alt="1"></div>
-                <div class="icon i2"><img src="eco-2.svg" alt="2"></div>
-                <div class="icon i3"><img src="eco-3.svg" alt="3"></div>
-                <div class="icon i4"><img src="eco-4.svg" alt="4"></div>
-                <div class="icon i5"><img src="eco-5.svg" alt="5"></div>
-                <div class="icon i6"><img src="eco-6.svg" alt="6"></div>
-                <div class="icon i7"><img src="eco-7.svg" alt="7"></div>
-                <div class="icon i8"><img src="eco-8.svg" alt="8"></div>
-            </div>
-        </div>
-    </section>
-
-    <section class="feedback">
-        <div class="wrap feedback-wrap">
-            <div class="feedback-info">
-                <h2 class="feedback-title">Fill up the form and we'll get in touch within a few hours</h2>
-                <div class="map-bg"><img src="map-asia.png" alt="Map"></div>
-            </div>
-            <div class="feedback-box">
-                <form class="form">
-                    <p class="form-title">Hi, we're <span class="red">Tinvio</span>! And you?</p>
-                    <input type="text" class="input" placeholder="Your Name" required>
-                    <input type="text" class="input" placeholder="Business Name" required>
-                    <input type="tel" class="input" placeholder="Phone Number" required>
-                    <button type="submit" class="btn btn-full">Submit</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="wrap footer-wrap">
-            <div class="footer-left">
-                <img src="logo.svg" alt="Tinvio" class="footer-logo">
-                <div class="footer-links">
-                    <a href="#">FAQ</a>
-                    <a href="#">Privacy</a>
-                    <a href="#">Germany</a>
-                    <a href="#">Legal</a>
-                </div>
-            </div>
-            <div class="footer-right">
-                <span class="copy">© Tinvio 2026.</span>
-                <div class="stores">
-                    <img src="appstore.svg" alt="App Store">
-                    <img src="googleplay.svg" alt="Google Play">
-                </div>
-            </div>
-        </div>
-    </footer>
+        <div class="hero-bg-shape"></div>
+        <div class="hero-bg-shape-top"></div>
+    </main>
 
 </body>
 </html>
