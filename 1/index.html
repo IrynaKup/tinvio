@@ -1,14 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home page</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -16,10 +13,10 @@
         <div class="header-container">
             <div class="logo-wrapper">
                 <a href="#" class="logo">
-                    <img src="logo.svg">
+                    <img src="logo.svg" alt="Logo">
                 </a>
                 <a href="#" class="Name">
-                    <img src="name.svg">
+                    <img src="name.svg" alt="Tinvio">
                 </a>
             </div>
             <nav>
@@ -36,34 +33,40 @@
                         <option value="ru">RU</option>
                     </select>
                 </div>
-                <a href="#" class="btn-signin">Sign In</a>
+                <button class="btn">Get Started</button>
             </div>
         </div>
     </header>
 
     <main class="main-section">
-        <div class="container">
-            <div class="main-content">
-                <h1 class="title">Value Proposition</h1>
+        
+        <section class="hero">
+            <div class="wrap hero-wrap">
                 
-                <div class="hero-actions">
-                    <a href="#" class="btn-primary">Start Now</a>
-                    <span class="btn-subtext">30 Days Trial</span>
+                <div class="hero-info">
+                    <h1 class="hero-title">Collecting payments <span class="red">is easy</span>, right?</h1>
+                    <p class="hero-text">Manage invoices, payment links, and dashboard. Get paid faster, reconcile quicker, grow happier.</p>
+                    <div class="hero-actions">
+                        <a href="#" class="btn btn-primary">Get Started Now</a>
+                        <span class="btn-subtext">It's free to try!</span>
+                    </div>
                 </div>
+
+                <div class="images">
+                    <div class="mockup-desktop">
+                        <img src="desktop.svg" alt="Desktop Mockup">
+                    </div>
+                    <div class="mockup-phone">
+                        <img src="phone.svg" alt="Phone Mockup">
+                    </div>
+                </div>
+
             </div>
 
-            <div class="images">
-                <div class="mockup-desktop">
-                    <img src="desktop.svg" alt="Desktop">
-                </div>
-                <div class="mockup-phone">
-                    <img src="phone.svg" alt="Phone">
-                </div>
-            </div>
-        </div>
+            <div class="hero-bg-shape"></div>
+            <div class="hero-bg-shape-top"></div>
+        </section>
 
-        <div class="hero-bg-shape"></div>
-        <div class="hero-bg-shape-top"></div>
     </main>
 
 </body>
