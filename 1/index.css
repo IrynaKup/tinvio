@@ -442,6 +442,7 @@ body {
   height: 142px;
   display: flex;
   flex-direction: column;
+  padding-left: 25px;
 }
 .container-right__content h2 {
   width: 484px;
@@ -455,7 +456,7 @@ body {
 .container-right__content p {
   max-width: 574px;
   width: 100%;
-  margin-top: 16px;
+  margin-top: 28px;
   color: var(--Text-Second, #5c5c5c);
   font-family: Inter;
   font-size: 18px;
@@ -465,7 +466,7 @@ body {
 .container-right__btn{
   display: flex;
   gap: 9px;
-  margin-top: 32px;
+  margin-top: 36px;
   color: var(--Text-Main, #212121);
   font-family: Gilroy;
   font-size: 18px;
@@ -490,6 +491,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 47px;
+  margin-left: -44px;
 }
 
 .flow-card {
@@ -528,48 +530,48 @@ body {
   height: 29px;
 
 }
-/* 
+ 
 .card-icon {
   position: absolute;
-  top: -22px;
-  left: -22px;
-
-  width: 70px;
-  height: 70px;
+  max-width: 60px;
+  width: 100%;
+  max-height: 60px;
+  height: 100%;
   border-radius: 50%;
-
   display: flex;
   align-items: center;
   justify-content: center;
+} 
 
-  font-size: 28px;
-}
-
-.card-icon--red {
-  background: #ffd4d5;
-}
+ .card-icon--red {
+  background: #FFA6A6;
+  top: -26px;
+  right: -13px;
+} 
 
 .card-icon--yellow {
-  background: #ffe7a8;
+  background: #FFE0A4;
+  top: -22px;
+  left: -22px;
 }
 
 .card-icon--green {
-  background: #cdeedf;
-}
+  background: #C5EDDC;
+  top: -22px;
+  left: -22px;
+} 
 
-*/
+
 /* .chat-card {
   transform: rotate(8deg);
 }  */
 
 .order-card {
-  margin-left: 250px;
-  /* transform: rotate(8deg); */
+    margin: 15px 0 0 248px;
 }
 
 .payment-card {
-  margin-left: -40px;
-  /* transform: rotate(8deg); */
+  margin: -21px -23px 0;
 }
 
 @media (max-width: 1440px) {
