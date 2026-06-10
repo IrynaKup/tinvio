@@ -143,3 +143,9 @@ vite.config.ts.timestamp-*
 .vite/
 .txt
 1.txt
+fonts/
+.woff
+.woff2
+normalize.css
+svg/
+photo/
