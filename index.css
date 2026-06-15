@@ -731,18 +731,11 @@ body {
   position: absolute;
   z-index: 2;
   transform: rotate(-8deg);
-  width: 200px;
-  height: 366px;
-  left: 46px;
-  margin-bottom: -177px;
   object-fit: cover;
 }
 .phone-right{
   position: absolute;
-  width: 789px;
-  height: 537px;
   transform: rotate(-8deg);
-  left: 199px;
   object-fit: cover;
   z-index: 4;
 }
