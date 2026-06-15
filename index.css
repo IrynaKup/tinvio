@@ -587,7 +587,6 @@ body {
 .features {
   background: #fff;
   margin-top: 251px;
-  overflow: hidden;
 }
 
 .features__container {
@@ -603,7 +602,7 @@ body {
 }
 
 .features__content {
-  max-width: 518px;
+  max-width: 520px;
   width: 100%;
 }
 
@@ -630,7 +629,7 @@ body {
 
 .features__tab {
   border: none;
-  background: #fff;
+  background: #F3F4F5;
   border-radius: 8px;
   padding: 12px 26px;
   cursor: pointer;
@@ -690,61 +689,75 @@ body {
   width: 520px;
   height: 520px;
   position: relative;
+  flex-shrink: 0;
+  display: flex;
 }
 
-
-
-
-.phone {
+.features__diamond--koral{
   position: absolute;
+  z-index: 1;
+  width: 560px;
+  height: 560px;
+  border-radius: 72px;
+  background-color: rgba(251, 36, 43, 0.6);
+  pointer-events: none;
+  transform: rotate(45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.features__diamond--red{
+  position: relative;
+  z-index: 2;
+  width: 490px;
+  height: 490px;
+  border-radius: 72px;
+  background-color: #fb242b;
+  pointer-events: none;
+}
+.pixel-2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1359px;
+  height: 1358px;
+  transform: rotate(-45deg);
   z-index: 5;
-
-  filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.12));
 }
-
-.phone--left {
-  width: 220px;
-
-  top: 70px;
-  left: 120px;
-
+.phone-left {
+  position: absolute;
+  z-index: 2;
   transform: rotate(-8deg);
+  width: 200px;
+  height: 366px;
+  left: 46px;
+  margin-bottom: -177px;
+  object-fit: cover;
 }
-
-.phone--right {
-  width: 220px;
-
-  top: 120px;
-  right: 60px;
-
+.phone-right{
+  position: absolute;
+  width: 789px;
+  height: 537px;
   transform: rotate(-8deg);
+  left: 199px;
+  object-fit: cover;
+  z-index: 4;
 }
 
-/* RESPONSIVE */
 
-@media (max-width: 992px) {
-  .features__container {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .features__tabs {
-    justify-content: center;
-  }
 
-  .features__list li {
-    text-align: left;
-  }
 
-  .features__visual {
-    width: 100%;
-    max-width: 500px;
-  }
 
-  .features__title {
-    font-size: 42px;
-  }
-}
+
+
+
+
+
+
 .featured-on {
   background: #f3f3f3;
   padding: 48px 0;
@@ -886,29 +899,6 @@ body {
   object-fit: cover;
 }
 
-/* точки снизу */
-
-.review__dots {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 35px;
-}
-
-.review__dots span {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.35);
-}
-
-.review__dots .active {
-  background: white;
-}
-
-/* ====================================
-   TABLET
-==================================== */
 
 @media (max-width: 992px) {
   .review {
