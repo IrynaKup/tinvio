@@ -775,6 +775,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 266px 0px 0px 0px;
 }
 
 .featured-on__container {
@@ -796,16 +797,16 @@ body {
   width: 666px;
 height: 1px;
 background: #D2D2D2;
+margin: 0 auto;
 
 }
 .featured-on__logos {
-  margin-top: 23px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 70px;
   flex-wrap: wrap;
+  margin-top: 32px;
 }
 
 .featured-on__logos svg {
