@@ -1,23 +1,20 @@
-const tabs = document.querySelectorAll(".features__tab");
+// Находим все контент-блоки
 const contents = [
   document.querySelector("#chats-content"),
   document.querySelector("#orders-content"),
   document.querySelector("#payments-content")
 ];
+const allTabs = document.querySelectorAll(".features__tab");
 
-tabs.forEach((tab, index) => {
-  if (tab && contents[index]) {
-    tab.addEventListener("click", () => {
-      
-      tabs.forEach(t => t.classList.remove("active"));
-      
-      contents.forEach(c => {
-        if (c) c.classList.remove("active");
-      });
-      tab.classList.add("active");
-      contents[index].classList.add("active");
-    });
-  }
+allTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    const parentTabsContainer = tab.parentElement;
+    const clickedIndex = Array.from(parentTabsContainer.children).indexOf(tab);
+    contents.forEach(c => { if (c) c.classList.remove("active"); });
+    if (contents[clickedIndex]) {
+      contents[clickedIndex].classList.add("active");
+    }
+  });
 });
 
 const openBurgerMenuBtn = document.querySelector("#burger-btn1");
