@@ -17,6 +17,11 @@ allTabs.forEach((tab) => {
   });
 });
 
+$(document).ready(function () {
+  $('.single-item').slick();
+});
+
+
 const openBurgerMenuBtn = document.querySelector("#burger-btn1");
 const closeBurgerMenuBtn = document.querySelector("#burger-btn2");
 const modalMenu = document.querySelector("#modal");
