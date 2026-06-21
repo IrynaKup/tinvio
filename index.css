@@ -833,7 +833,7 @@ body {
   content: "";
   position: relative;
   margin: 293px 0 0 54px;
-  height: 662px;
+  height: 967px;
   background-color: #363636;
   width: calc(100% - 54px);
   transform: skewY(-8deg);
@@ -845,11 +845,22 @@ body {
   z-index: 5;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
+.why{
 
+  flex-direction: column;
+  max-height: 522px;
+  height: 100%;
+  display: flex;
+  margin-top: 87px;
+}
 .why__title {
-  color: #fff;
+  color: var(--Text-White, #FFF);
+font-family: Gilroy;
+font-size: 44px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -884,10 +895,14 @@ body {
 }
 
 .review-card__quote p {
+  max-width: 750px;
   margin: 0;
-  line-height: 1.6;
-  font-size: 20px;
-  color: #333;
+  color: var(--Text-Main, #212121);
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 25px; 
 }
 
 .review-card__author {
@@ -898,8 +913,8 @@ body {
 }
 
 .review-card__logo {
-  width: 60px;
-  height: 60px;
+  width: 96px;
+height: 49px;
   border-radius: 50%;
   background: #ececec;
 
@@ -910,16 +925,74 @@ body {
 
 .review-card__author h4 {
   margin: 0;
-  font-size: 18px;
+  color: var(--Text-Main, #212121);
+font-family: Gilroy;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }
 
 .review-card__author span {
-  color: #777;
+  color: var(--Text-Second, #5C5C5C);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-transform: uppercase;
   font-size: 14px;
 }
+.arrow-wrapper {
+  display: flex;
+  gap: 24px;
+}
 
+.arrow-square {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #D2D2D2;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s ease;
+}
+
+.arrow-square::before,
+.arrow-square::after {
+  content: '';
+  position: absolute;
+  left: 50%; 
+  width: 10px; 
+  height: 2px;
+  background-color: white; 
+  transform-origin: left center; 
+  transition: background-color 0.2s ease;
+}
+
+.arrow-left::before {
+  top: calc(50% + 1px); 
+  transform: translate(-50%, -50%) skew(-45deg) rotate(-45deg);
+}
+
+.arrow-left::after {
+  top: calc(50% - 1px);
+}
+.arrow-right {
+  transform: scaleX(-1);
+}
+
+.arrow-square:hover {
+  background-color: #555555;
+}
+
+.arrow-square:hover::before,
+.arrow-square:hover::after {
+  background-color: #FF474D; 
+}
 .review-card__image {
-  width: 340px;
+  width: 237.554px;
+height: 353px;
   flex-shrink: 0;
 
   display: flex;
@@ -927,7 +1000,7 @@ body {
   justify-content: center;
 }
 
-.review-card__image img {
+.review-card__image img{
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -938,35 +1011,58 @@ body {
 .single-item .slick-slide {
   padding: 0 10px;
 }
-
+.single-item {
+  position: relative;
+}
 .single-item .slick-prev,
 .single-item .slick-next {
-  width: 42px;
-  height: 42px;
-
-  border: none;
-  border-radius: 10px;
-
-  background: #e6e6e6;
-  color: #666;
-  cursor: pointer;
-
   position: absolute;
-  bottom: 35px;
   z-index: 10;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #D2D2D2;
+  border: none;
+  cursor: pointer;
+  
+  bottom: 40px;
+  transition: background-color 0.2s ease;
+}
+
+.single-item .slick-prev::before,
+.single-item .slick-next::before {
+  display: none;
+}
+
+.single-item .slick-prev::after,
+.single-item .slick-next::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  border-left: 2px solid white;
+  border-bottom: 2px solid white;
 }
 
 .single-item .slick-prev {
-  left: 35px;
+  left: 40px; 
+}
+.single-item .slick-prev::after {
+  transform: translate(-30%, -50%) rotate(45deg);
 }
 
 .single-item .slick-next {
-  left: 90px;
+  left: 90px; 
+}
+.single-item .slick-next::after {
+  transform: translate(-70%, -50%) rotate(-135deg);
 }
 
-.single-item .slick-prev:before,
-.single-item .slick-next:before {
-  display: none;
+.single-item .slick-prev:hover,
+.single-item .slick-next:hover {
+  background-color: #555555;
 }
 
 @media (max-width: 1440px) {

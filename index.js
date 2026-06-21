@@ -17,9 +17,20 @@ allTabs.forEach((tab) => {
   });
 });
 
-$(document).ready(function () {
-  $('.single-item').slick();
+$(document).ready(function(){
+  $('.single-item').slick({
+    dots: false,       
+    arrows: true,     
+    infinite: true,   
+    speed: 300,        
+    slidesToShow: 1,   
+    adaptiveHeight: true,
+    prevArrow: '<button type="button" class="slick-prev"></button>',
+  nextArrow: '<button type="button" class="slick-next"></button>'
+
+  });
 });
+
 
 
 const openBurgerMenuBtn = document.querySelector("#burger-btn1");
