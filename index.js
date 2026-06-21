@@ -19,7 +19,7 @@ allTabs.forEach((tab) => {
 
 $(document).ready(function(){
   $('.single-item').slick({
-    dots: false,       
+    dots: true,       
     arrows: true,     
     infinite: true,   
     speed: 300,        
