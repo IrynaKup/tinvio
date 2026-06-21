@@ -897,7 +897,7 @@ line-height: normal;
 .review-card__quote p {
   max-width: 750px;
   margin: 0;
-  color: var(--Text-Main, #212121);
+  color: #212121;
 font-family: Inter;
 font-size: 20px;
 font-style: normal;
@@ -915,9 +915,6 @@ line-height: 25px;
 .review-card__logo {
   width: 96px;
 height: 49px;
-  border-radius: 50%;
-  background: #ececec;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -925,7 +922,7 @@ height: 49px;
 
 .review-card__author h4 {
   margin: 0;
-  color: var(--Text-Main, #212121);
+  color:  #212121;
 font-family: Gilroy;
 font-size: 18px;
 font-style: normal;
@@ -934,7 +931,7 @@ line-height: normal;
 }
 
 .review-card__author span {
-  color: var(--Text-Second, #5C5C5C);
+  color:  #5C5C5C;
 font-family: Inter;
 font-size: 12px;
 font-style: normal;
