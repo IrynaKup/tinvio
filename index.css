@@ -833,7 +833,7 @@ body {
   content: "";
   position: relative;
   margin: 293px 0 0 54px;
-  height: 967px;
+  height: 700px;
   background-color: #363636;
   width: calc(100% - 54px);
   transform: skewY(-8deg);
@@ -960,10 +960,9 @@ height: 353px;
   object-fit: contain;
 }
 
-/* Slick */
 
 .single-item .slick-slide {
-  padding: 0 10px;
+  padding: 0 16px;
 }
 .single-item {
   position: relative;
@@ -979,7 +978,7 @@ height: 353px;
   border: none;
   cursor: pointer;
   
-  bottom: 40px;
+  top: 281px;
   transition: background-color 0.2s ease;
 }
 
