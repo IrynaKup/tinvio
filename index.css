@@ -1016,10 +1016,6 @@ height: 353px;
 .single-item .slick-next:hover {
   background-color: #D2D2D2;
 }
-.single-item .slick-dots li button:before {
-    content: none !important;  
-    display: none !important; 
-}
 .single-item .slick-dots li {
     width: 12px;
     height: 12px;

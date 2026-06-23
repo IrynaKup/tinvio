@@ -74,3 +74,7 @@ ul, ol {
   padding: 0;
   margin: 0;
 }
+.single-item .slick-dots li button:before {
+    content: none !important;  
+    display: none !important; 
+}
