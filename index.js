@@ -16,7 +16,6 @@ allTabs.forEach((tab) => {
     }
   });
 });
-
 $(document).ready(function(){
   $('.single-item').slick({
     dots: true,       
@@ -26,8 +25,7 @@ $(document).ready(function(){
     slidesToShow: 1,   
     adaptiveHeight: true,
     prevArrow: '<button type="button" class="slick-prev"></button>',
-  nextArrow: '<button type="button" class="slick-next"></button>'
-
+    nextArrow: '<button type="button" class="slick-next"></button>'
   });
 });
 

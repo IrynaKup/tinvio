@@ -893,7 +893,7 @@ line-height: normal;
   width: 935px;
 height: 123px;
   border-radius: 20px;
-  padding: 28px;
+  padding: 24px;
 }
 
 .review-card__quote p {
@@ -976,7 +976,7 @@ height: 353px;
   background-color: #D2D2D2;
   border: none;
   cursor: pointer;
-  
+  bottom: 56px;
   top: 281px;
   transition: background-color 0.2s ease;
 }
@@ -999,14 +999,14 @@ height: 353px;
 }
 
 .single-item .slick-prev {
-  left: 40px; 
+  left: 56px; 
 }
 .single-item .slick-prev::after {
   transform: translate(-30%, -50%) rotate(45deg);
 }
 
 .single-item .slick-next {
-  left: 90px; 
+  left: 120px; 
 }
 .single-item .slick-next::after {
   transform: translate(-70%, -50%) rotate(-135deg);
