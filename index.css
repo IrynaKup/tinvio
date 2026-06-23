@@ -1012,7 +1012,7 @@ height: 353px;
 
 .single-item .slick-prev:hover,
 .single-item .slick-next:hover {
-  background-color: #555555;
+  background-color: #D2D2D2;
 }
 
 @media (max-width: 1440px) {
