@@ -889,7 +889,9 @@ line-height: normal;
 }
 
 .review-card__quote {
-  background: #f4f4f4;
+  background: #f1f1f1;
+  width: 935px;
+height: 123px;
   border-radius: 20px;
   padding: 28px;
 }
@@ -913,8 +915,8 @@ line-height: 25px;
 }
 
 .review-card__logo {
-  width: 96px;
-height: 49px;
+  width: 102px;
+height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
