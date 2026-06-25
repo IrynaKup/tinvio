@@ -1045,8 +1045,75 @@ height: 353px;
 .single-item .slick-dots li.slick-active button {
     background: #FFF; 
 }
+.happy {
+  padding: 120px 0;
+  background: #fafafa;
+  overflow: hidden;
+}
 
+.happy h2 {
+  text-align: center;
+  margin-bottom: 80px;
+}
 
+.happy__grid {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 40px;
+  place-items: center;
+}
+.happy__logo {
+  width: 90px;
+  height: 90px;
+
+  background: white;
+
+  transform: rotate(45deg);
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.happy__logo img {
+  width: 40px;
+  transform: rotate(-45deg);
+}
+.happy__badge {
+  width: 180px;
+  height: 180px;
+
+  background: #ff3434;
+
+  transform: rotate(45deg);
+
+  border-radius: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  position: relative;
+}
+
+.arc-line {
+  width: 197.116px;
+  height: 73.324px;
+  border-bottom: 4.25px solid #FFF;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 4.25px;
+}
 @media (max-width: 1440px) {
   .header {
     max-width: 1151px;
