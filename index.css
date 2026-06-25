@@ -1057,13 +1057,7 @@ height: 353px;
 }
 
 .happy__grid {
-  max-width: 900px;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 40px;
-  place-items: center;
+  
 }
 .happy__logo {
   width: 90px;
